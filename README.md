@@ -159,3 +159,29 @@ Running Unit & Integration Tests
    ```terminal
    # docker run -ti opencbdc-tx ./scripts/test.sh
    ```
+
+## Manual Build CI/CD
+
+Build Base Image
+
+    ```terminal
+    #  docker build . -t ghcr.io/mit-dci/opencbdc-tx-base -f base.Dockerfile
+    ```
+
+Build Default Image
+
+    ```terminal
+    #  docker build . -t opencbdc-tx
+    ```
+
+Build Debug Image
+
+    ```terminal
+    #  docker build . -t ghcr.io/mit-dci/opencbdc-tx-debug -f debug.Dockerfile
+    ```
+
+Build Release Image
+
+    ```terminal
+    #  docker build . -t ghcr.io/mit-dci/opencbdc-tx-release -f release.Dockerfile
+    ```
